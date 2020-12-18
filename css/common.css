@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@font-face { font-family: 'Perpetua Titling MT';
+  src:url('../font/PERTILI.TTF'), url('../font/PERTILI.otf') url('../font/PERTILI.woff');
+}
+@font-face { font-family: 'Perpetua Titling MT';
+  src:url('../font/pertibd.TTF'), url('../font/pertibd.otf') url('../font/pertibd.woff');
+}
+
+
+
+/* 초기화 */
+body, h1, h2, h3, p, ul, dl, dd, figure, table, tr, th, td, form, fieldset, input {margin:0; padding:0}
+li {list-style: none;}
+a{text-decoration: none;}
+.hidden{position:absolute; left:-9999px;}
+fieldset{border: 0px;}
+address{font-style:normal;}
+hr{display:none;}
+small{font-size:1em;}
+
+body { font-family: 'Noto Sans KR', sans-serif;
+       min-width: 1200px; position: relative;}
+
+#header {width: 100%; height:85px;
+
+          background-color: rgba(0, 0, 0, 0.8);
+
+          position: absolute;
+          z-index: 999; top:0; left:0;
+          padding-top: 25px;
+          margin-right: 40px;
+          /* margin: 25px 59px 0 0 ; */
+          }
+#header h1 {float: left;
+
+              }
+#header h1 img {width: 205px; height: 67px;
+                  margin:0 80px 0 59px;
+
+                }
+#gnb_menu{float:left;  margin-top: 20px;}
+#gnb_menu ul{color:#fff;}
+#gnb_menu ul li { float:left; font-size: 18px;
+                text-transform: uppercase;
+                padding: 0 15px;
+                margin-left: 10px;
+                font-family: 'Noto Sans KR', sans-serif;
+
+                }
+
+#gnb_menu ul li a {color:#fff; font-weight: bold;
+                }
+#gnb_menu > ul > li >  a { display: block; height: 65px; }
+#gnb_menu ul > li > ul {  width: 100%; height: 60px;
+                      background: #ececec;
+                      line-height:80px;
+
+                      position:absolute;
+                      top:110px; left:0px;
+                      padding-left:345px;
+                      box-sizing: border-box;
+
+                    }
+#gnb_menu ul>li>ul>li {float: left; margin-right:40px;}
+#gnb_menu ul>li>ul>li>a {color:#000; display: block;
+                          line-height: 60px;
+                          font-size: 13px;
+                          }
+/* #gnb_member ul>li>a { color:#fff;
+                      width: 200px; height: 50px;
+                     } */
+#gnb_menu ul>li>ul>li>ul {display: none;}
+
+#gnb_member {position: absolute; top:45px; right:210px;}
+#gnb_member ul { }
+#gnb_member ul li {float:left; font-size: 12px;
+                    padding: 0 8px;
+                   text-transform: uppercase;}
+#gnb_member ul li a { color:#fff; }
+
+
+
+#famailysite { position: absolute; top:43px;  right:40px;
+                }
+#famailysite h2 {width: 150px; height:24px;
+
+                font-size: 14px; text-align: center;
+                text-transform: uppercase;
+                background-color:#9c7712;
+                background-image: url('../images/arrow1.png');
+                background-repeat: no-repeat;
+                background-position: center right;
+
+                }
+#famailysite ul {width: 280px; height: 190px; background-color: #fff; position: absolute; right:0;
+display:none;}
+#famailysite ul li { border: 0.5px solid #747474; height: 35px;}
+#famailysite ul li a { color:#000;
+                      line-height: 35px;
+                      font-size: 12px;
+                      text-indent: 10px;}
+
+
+
+
+/* 푸터 */
+
+#footer {width:100%; height:300px;
+background-color: #45433b;
+padding-top:  57px;
+box-sizing: border-box;
+/* background: url(../images/logo.png) no-repeat top:57px center; */
+ }
+
+#footerwrap { position: relative;
+width: 1200px;
+margin: 0 auto;
+ }
+ #footerwrap>img {float: left;
+ width: 206px; height: 164px;}
+
+.etc_menu { float:left; margin-left:45px;
+            margin-top: 5px;}
+.etc_menu ul li {float: left;
+
+margin-right: 18px; }
+.etc_menu ul li a { color:#fff; font-size: 18px;}
+.etc_menu ul::after { content: "";
+  position: absolute; top:50px; left:250px;
+  width: 938px;
+  border-bottom: 2px solid #fff;}
+  /* 보더가 왜 안들어가는지? */
+
+
+.info { clear: both; margin-top: 80px;
+
+}
+.info address { color: #fff;
+line-height: 40px;
+
+font-family: 'Noto Sans KR', sans-serif; }
+
+.info small { line-height: 40px;
+ color: #fff;
+font-family: 'Noto Sans KR', sans-serif;
+}
+.sns {float:left; margin:100px 0 0 20px;}
+.sns li {float:left; margin-left: 7px;}
+.sns li img {width: 53px;height: 53px;}

@@ -1,0 +1,469 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@font-face { font-family: 'Perpetua Titling MT';
+  src:url('../font/PERTILI.TTF'), url('../font/PERTILI.otf') url('../font/PERTILI.woff');
+}
+@font-face { font-family: 'Perpetua Titling MT';
+  src:url('../font/pertibd.TTF'), url('../font/pertibd.otf') url('../font/pertibd.woff');
+}
+
+
+
+body, h1, h2, h3, p, ul, dl, dd, figure, table, tr, th, td, form, fieldset, input {margin:0; padding:0}
+li {list-style: none;}
+a{text-decoration: none;}
+.hidden{position:absolute; left:-9999px;}
+fieldset{border: 0px;}
+address{font-style:normal;}
+hr{display:none;}
+small{font-size:1em;}
+
+body { font-family: "Noto Sans CJK KR", sans-serif;
+       min-width: 1200px; position: relative;}
+
+#header {width: 100%; height:85px;
+
+          background-color: rgba(0, 0, 0, 0.8);
+
+          position: absolute;
+          z-index: 999; top:0; left:0;
+          padding-top: 25px;
+          margin-right: 40px;
+          /* margin: 25px 59px 0 0 ; */
+          }
+#header h1 {float: left;
+
+              }
+#header h1 img {width: 205px; height: 67px;
+                  margin:0 80px 0 59px;
+
+                }
+#gnb_menu{float:left;  margin-top: 20px;}
+#gnb_menu ul{color:#fff;}
+#gnb_menu ul li { float:left; font-size: 18px;
+                text-transform: uppercase;
+                padding: 0 15px;
+                margin-left: 10px;
+                font-family: "Noto Sans CJK KR", sans-serif;
+
+                }
+
+#gnb_menu ul li a {color:#fff; font-weight: bold;
+                }
+#gnb_menu > ul > li >  a { display: block; height: 65px; }
+#gnb_menu ul > li > ul {  width: 100%; height: 60px;
+                      background: #ececec;
+                      line-height:80px;
+
+                      position:absolute;
+                      top:110px; left:0px;
+                      padding-left:345px;
+                      box-sizing: border-box;
+
+                    }
+#gnb_menu ul>li>ul>li {float: left; margin-right:40px;}
+#gnb_menu ul>li>ul>li>a {color:#000; display: block;
+                          line-height: 60px;
+                          font-size: 13px;
+                          }
+/* #gnb_member ul>li>a { color:#fff;
+                      width: 200px; height: 50px;
+                     } */
+#gnb_menu ul>li>ul>li>ul {display: none;}
+
+#gnb_member {position: absolute; top:45px; right:210px;}
+#gnb_member ul { }
+#gnb_member ul li {float:left; font-size: 12px;
+                    padding: 0 8px;
+                   text-transform: uppercase;}
+#gnb_member ul li a { color:#fff; }
+
+
+
+#famailysite { position: absolute; top:43px;  right:40px;
+                }
+#famailysite h2 {width: 150px; height:24px;
+
+                font-size: 14px; text-align: center;
+                text-transform: uppercase;
+                background-color:#9c7712;
+                background-image: url('../images/arrow1.png');
+                background-repeat: no-repeat;
+                background-position: center right;
+
+                }
+#famailysite ul {width: 280px; height: 190px; background-color: #fff; position: absolute; right:0;
+display:none;}
+#famailysite ul li { border: 0.5px solid #747474; height: 35px;}
+#famailysite ul li a { color:#000;
+                      line-height: 35px;
+                      font-size: 12px;
+                      text-indent: 10px;}
+
+main{}
+
+/* 메인1 슬라이더 */
+  #main_sliderWrap { overflow: hidden; width: 100%; height: 945px; }
+  #sliderList { width: 300%; }
+  #sliderList .active { z-index: 1; }
+  #sliderList li { width: 33.3333%; height: 945px;
+                  float: left;
+                  background: no-repeat  center /cover;
+                  }
+  #sliderList li.slider1 { background-image: url(../images/main1.jpg); }
+  #sliderList li.slider2 { background-image: url(../images/main2.png); }
+  #sliderList li.slider3 { background-image: url(../images/main3.jpg); }
+
+  /* 슬라이더 좌우버튼 이미지 넣어야함. */
+  #btnPos span { position: absolute; top: 112px;
+                width: 60px;
+                height: calc(100% - 80px);
+                color: #fff;
+
+                text-indent: -99999px;}
+  #btnPos span.prev { left: 0px; }
+  #btnPos span.next { right: 0px; }
+
+
+/* 예약페이지 */
+  #reser { height: 445px; padding-top:85px;
+          background: url(../images/reser.jpg) no-repeat center/cover;
+          }
+  #reser div {margin: 0 auto; width: 1200px;}
+  #reser div h3 { font-size: 30px; color:#fff;
+                  text-transform: uppercase;
+                  font-weight:normal;
+
+                  }
+  #reser div>p {
+                font-size: 70px; color:#9c7712;
+                font-weight: bold;
+                line-height: 60px;
+                padding:10px 0 60px 0;}
+    /* 질문1 공간이동하는 법? 답 라인하이트 */
+  #reser div>p>span {font-size: 30px;  color:#fff;
+                      margin-top:-20px;
+                      }
+
+/* 예약페이지 -폼태그 */
+.reser_sec {width: 1200px; height: 55px;
+
+            background-color:#fff;}
+.reser_sec fieldset { float:left;}
+
+/* 예약페이지 - 룸타입 */
+.reser_room {}
+  /* 질문2 디럭스 더블 대신에 room 나오게 하는 법? */
+
+
+.roomtype {width: 162px; height: 55px;
+           border: 0px;}
+
+
+
+/* 예약페이지 - 예약날짜 */
+.reser_date {width: 542px; height: 55px;
+              float: left; }
+.reser_date label { text-transform: uppercase;
+                    font-size:12px;
+                    color: #747474;
+                    float: left;
+                    margin:19px 25px 0;
+                  }
+/* 질문2 디자인처럼 나오는법? */
+.reser_date input { float: left;
+                    width: 133px; height:55px;
+                    border: 0px;
+                  }
+.reser_date>p { float: left;
+                margin-left:26px;
+                font-size:12px;
+                color: #747474;
+                margin-top:15px;}
+.reser_date>p>span {font-size:16px;}
+
+/* 예약페이지 - 인원 */
+.reser_person {width: 380px; height: 55px;
+                margin-top:15px;
+                text-transform: uppercase;}
+.reser_person label { margin: 0 20px;
+                      font-size: 12px;
+                      color: #747474;}
+/* 질문 원래디자인처럼 숫자나오는법 */
+.reser_person input {width: 26px;
+                      border:0px; }
+
+/* 예약페이지 - 확인버튼 */
+.confirm{width: 115px; height: 55px;
+
+        }
+.confirm input {  width: 116px; height: 55px;
+                  background-color: #9c7712;
+                  text-transform: uppercase;
+                  border: 0px;
+                  font-size: 20px;
+                  font-weight: bold; color:#fff;
+}
+
+/* 섹션3 경원재 객실 둘러보기 */
+#roomtype { width: 1270px; height: 1230px;
+              margin:0 auto;
+               ;
+            }
+
+
+#roomtype hgroup {position:relative;
+  width: 100%; height: 270px;
+
+    /* top:140; left:0; bottom:0; right:0; */
+
+}
+
+#roomtype hgroup h3 {font-size:45px;
+font-family: "Noto Serif CJK KR", serif;
+  position:absolute;
+  width: 100%; text-align: center;
+  bottom:0px;
+  padding-bottom: 75px;
+ }
+
+
+
+
+#roomtype {width: 1200px; height: 1230px;
+              position: relative;
+                margin: 0 auto;}
+#roomtype ul { height: 30px; text-align: center;
+
+              }
+#roomtype ul li {display: inline-block;
+                  margin:0 15px;
+                  height: 30px;
+                }
+#roomtype ul li.on {border-bottom: 3px solid #9c7712;}
+#roomtype ul li.on a {color:#000;}
+#roomtype ul li a {
+  font-size: 18px;
+  color:#747474;
+
+}
+  /* 왜 색깔이 안먹히는걸까 ㅠㅠ */
+#roomtype ul li figure
+{  height: 630px;
+  position: absolute;
+  top:330px; left:0;
+  width: 1200px; height: 630px;
+}
+/* #roomtype ul li figure .imgOn {z-index: 888899;} */
+#roomtype ul li figure img
+{}
+#roomtype ul li figure img:nth-child(1)
+{ width: 750px; height: 630px;
+  float:left;
+}
+#roomtype ul li figure img:nth-child(2)
+{width: 440px; height: 310px;
+  margin-bottom: 10px;
+  float: right;
+}
+#roomtype ul li figure img:nth-child(3)
+{width: 440px; height: 310px;
+float:right;
+}
+#roomtype ul li:nth-child(2) figure {display: none;}
+#roomtype ul li:nth-child(3) figure {display: none;}
+#roomtype ul li:nth-child(4) figure {display: none;}
+#roomtype ul li:nth-child(5) figure {display: none;}
+
+
+
+
+#restaurant {width: 100%; height: 1050px;
+background: url(../images/restaurantBG.jpg) no-repeat center / cover;
+position: relative;
+
+}
+#rest_2 { width: 1200px; height: 1050px;
+margin: 0 auto;}
+
+#rest_2 h2 {color: #fff; font-size: 60px;
+  padding-top:90px;
+  margin-left: 100px;
+  text-shadow:1px 1px 15px #ce9927;
+ }
+#rest_2 h2>span { color : #9c7712;
+  font-size:30px;
+  margin-left: 20px;
+  font-family: "Noto Serif CJK KR", serif;
+  text-shadow: 0;
+  font-weight: normal;
+}
+
+.diningbg2 {
+  width: 1114px; height: 783px;
+  position: absolute; bottom:0; left:calc(50% - 950px);
+   background: url(../images/restaurantBG2.jpg) no-repeat center center / cover;
+}
+.dininginfo {width: 400px; height: 783px;
+padding: 439px 0 0 800px;
+position: relative;
+}
+.dininginfo h3 { font-size: 48px;
+  position: absolute; top:290px;
+  color:#333434;
+  }
+.dininginfo p { color:#000; font-size: 20px;}
+.dininginfo .p1 {
+position: absolute; top:250px;
+color:#fff;
+}
+.dininginfo .p2 {
+  font-size:40px;
+  font-family: "Perpetua Titling MT", serif ;
+  position: absolute; top:500px; font-weight: bold;
+  line-height: 60px;
+  color:#333434;
+}
+.dininginfo .p3 {
+  font-weight: bold; font-size: 20px;
+  text-transform: uppercase;
+  color:#9c7712;
+  position: absolute; top:700px;
+}
+.dininginfo a {
+  width: 400px; height: 47px;
+  background-color: #9c7712;
+  color:#fff;
+  font-size: 20px;
+  position: absolute; top: 820px;
+  text-indent: 25px;
+  line-height: 47px;
+}
+
+
+
+#special_offer { width: 100%; height: 1470px;
+background: url(../images/offerbg.jpg) no-repeat center / cover;
+position: relative;
+}
+
+.offerbg2 {
+  width: 781px; height: 1000px;
+   position: absolute; top:307px; left:calc(50% - 652px);
+   background: url(../images/offerbg2.jpg) no-repeat bottom left  / cover;
+}
+
+#offer_2 { width: 1200px; height: 1470px;
+margin: 0 auto;
+position: relative;}
+
+#offer_2 h2 {color: #fff;
+  font-family: "Noto Serif CJK KR", serif ;
+  font-size: 60px;
+  padding: 375px 0 0 450px;
+  text-transform: uppercase;
+  text-shadow:1px 1px 15px #fff;
+  /* position: relative;  */
+  z-index: 99999;
+   }
+#offer_2 h2>span {color: #343434;
+  font-size: 60px;
+  padding: 375px 0 0 20px;
+  text-transform: uppercase;
+  /* position: relative;  */
+  z-index: 99999;
+      }
+
+
+#offer_2 .offer_sub { color : #476278;
+  font-size:30px;
+  margin: 0px;
+  position: absolute; top:350px; left:770px; z-index: 99999;
+  font-family: "Noto Serif CJK KR", serif;
+}
+
+#offer_2 .offerinfo
+{width: 519px; height: 589px;
+margin: 820px 0 0 760px;
+position: absolute; top:0; left:0;
+width: 400px; height: 783px;
+}
+
+
+/* #offer_2 .offerinfo {width: 400px; height: 783px;
+position: relative;
+} */
+
+.offerinfo h3 { font-size: 48px;
+  position: absolute; top:30px;
+  color:#333434;
+  }
+.offerinfo p { font-size: 20px; }
+
+.offerinfo .pp1 {
+position: absolute;
+top:0px;
+color:#476278;
+}
+.offerinfo .p2 {
+  font-size:35px;
+  font-family: "Perpetua Titling MT", serif ;
+  position: absolute; top:220px; font-weight: bold;
+  letter-spacing: -0.076em;
+  line-height: 50px;
+  color:#333434;
+}
+
+.offerinfo a {
+  width: 430px; height: 47px;
+  background-color: #476278;
+  color:#fff;
+  font-size: 20px;
+  position: absolute; top: 440px;
+  text-indent: 25px;
+  line-height: 47px;
+}
+
+#footer {width:100%; height:300px;
+background-color: #45433b;
+padding-top:  57px;
+box-sizing: border-box;
+/* background: url(../images/logo.png) no-repeat top:57px center; */
+ }
+
+#footerwrap { position: relative;
+width: 1200px;
+margin: 0 auto;
+ }
+ #footerwrap>img {float: left;
+ width: 206px; height: 164px;}
+
+.etc_menu { float:left; margin-left:45px;
+            margin-top: 5px;}
+.etc_menu ul li {float: left;
+
+margin-right: 18px; }
+.etc_menu ul li a { color:#fff; font-size: 18px;}
+.etc_menu ul::after { content: "";
+  position: absolute; top:50px; left:250px;
+  width: 938px;
+  border-bottom: 2px solid #fff;}
+  /* 보더가 왜 안들어가는지? */
+
+
+.info { clear: both; margin-top: 80px;
+
+}
+.info address { color: #fff;
+line-height: 40px;
+
+font-family: "Noto Sans CJK KR", sans-serif; }
+
+.info small { line-height: 40px;
+ color: #fff;
+font-family: "Noto Sans CJK KR", sans-serif;
+}
+.sns {float:left; margin:100px 0 0 20px;}
+.sns li {float:left; margin-left: 7px;}
+.sns li img {width: 53px;height: 53px;}

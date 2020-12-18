@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+body, h1, h2, h3, p, ul, dl, dd, figure, table, tr, th, td, form, fieldset, input {margin:0; padding:0}
+li {list-style: none;}
+a{text-decoration: none;}
+.hidden{position:absolute; left:-9999px;}
+fieldset{border: 0px;}
+address{font-style:normal;}
+hr{display:none;}
+small{font-size:1em;}
+
+body { font-family: "Noto Sans CJK KR", sans-serif; min-width: 1200px;}
+
+#header {width: 100%; height:85px;
+
+          background-color: rgba(0, 0, 0, 0.8);
+
+          position: absolute;
+          z-index: 999; top:0; left:0;
+          padding-top: 25px;
+          margin-right: 40px;
+          /* margin: 25px 59px 0 0 ; */
+          }
+#header h1 {float: left;
+
+              }
+#header h1 img {width: 205px; height: 67px;
+                  margin:0 80px 0 59px;
+
+                }
+#gnb_menu{float:left;  margin-top: 15px;}
+#gnb_menu ul{color:#fff;}
+#gnb_menu ul li {float:left; font-size: 20px;
+                  text-transform: uppercase;
+                padding: 0 11px;
+                }
+#gnb_menu ul li a {color:#fff;
+                }
+#gnb_menu ul li ul {display: none;}
+
+#gnb_member {position: absolute; right:210px;}
+#gnb_member ul { margin-top: 15px;}
+#gnb_member ul li {float:left; font-size: 14px;
+                    padding: 0 11px;
+                   text-transform: uppercase;}
+#gnb_member ul li a { color:#fff;}
+
+
+
+#famailysite { position: absolute; margin-top: 15px; right:40px;
+                }
+#famailysite h2 {width: 150px; height:24px;
+                  background-color:#9c7712;
+                font-size: 14px; text-align: center;
+                text-transform: uppercase;
+                }
+#famailysite ul {display: none;}
+#famailysite ul li {}
+
+main{}
+
+/* 메인1 슬라이더 */
+  #main_sliderWrap { overflow: hidden; width: 100%; height: 945px; }
+  #sliderList { width: 300%; }
+  #sliderList li { width: 33.3333%; height: 945px;
+                  float: left;
+                  background: no-repeat  center /center;
+                  }
+  #sliderList li.slider1 { background-image: url(../images/main1.jpg); }
+  #sliderList li.slider2 { background-image: url(../images/main2.png); }
+  #sliderList li.slider3 { background-image: url(../images/main3.jpg); }
+
+  /* 슬라이더 좌우버튼 이미지 넣어야함. */
+  #btnPos span { position: absolute; top: 300px;
+                width: 50px; height: 50px;
+                background: #000; color: #fff; }
+  #btnPos span.prev { left: 30px; }
+  #btnPos span.next { right: 30px; }
+
+
+/* 예약페이지 */
+  #reser { height: 445px; padding-top:85px;
+          background: url(../images/reser.jpg) no-repeat center/cover;
+          }
+  #reser div {margin: 0 auto; width: 1200px;}
+  #reser div h3 { font-size: 30px; color:#fff;}
+  #reser div>p {
+                font-size: 70px; color:#9c7712;
+                font-weight: bold;}
+  #reser div>p>br { }
+    /* 질문1 공간이동하는 법? */
+  #reser div>p>span {font-size: 30px;  color:#fff;
+                      margin-top:-20px;
+                      }
+
+/* 예약페이지 -폼태그 */
+.reser_sec {width: 1200px; height: 55px;
+
+            background-color:#fff;}
+.reser_sec fieldset { float:left;}
+
+/* 예약페이지 - 룸타입 */
+.reser_room {}
+  /* 질문2 디럭스 더블 대신에 room 나오게 하는 법? */
+.roomtype {width: 162px; height: 55px;
+           border: 0px;}
+
+/* 예약페이지 - 예약날짜 */
+.reser_date {width: 542px; height: 55px;
+              float: left; }
+.reser_date label { text-transform: uppercase;
+                    font-size:12px;
+                    color: #747474;
+                    float: left;
+                    margin:19px 25px 0;
+                  }
+/* 질문2 원래디자인처럼 나오는법? */
+.reser_date input { float: left;
+                    width: 133px; height:55px;
+                    border: 0px;
+                  }
+.reser_date>p { float: left;
+                margin-left:26px;
+                font-size:12px;
+                color: #747474;
+                margin-top:15px;}
+.reser_date>p>span {font-size:16px;}
+
+/* 예약페이지 - 인원 */
+.reser_person {width: 380px; height: 55px;
+                margin-top:15px;
+                text-transform: uppercase;}
+.reser_person label { margin: 0 20px;
+                      font-size: 12px;
+                      color: #747474;}
+/* 질문 원래디자인처럼 숫자나오는법 */
+.reser_person input {width: 26px;
+                      border:0px; }
+
+/* 예약페이지 - 확인버튼 */
+.confirm{width: 115px; height: 55px;
+
+        }
+.confirm input {  width: 116px; height: 55px;
+                  background-color: #9c7712;
+                  text-transform: uppercase;
+                  border: 0px;
+                  font-size: 20px;
+                  font-weight: bold; color:#fff;
+}
+
+/* 섹션3 경원재 객실 둘러보기 */
+#roomtype { width: 1270px; height: 1230px;
+              margin:0 auto;
+               ;
+            }
+
+#roomtype hgroup {position:relative;
+  width: 100%; height: 270px;
+
+    /* top:140; left:0; bottom:0; right:0; */
+
+}
+
+#roomtype hgroup h3 {font-size:45px;
+font-family: "Noto Serif CJK KR", serif;
+  position:absolute;
+  width: 100%; text-align: center;
+  bottom:0px;
+  padding-bottom: 75px;
+ }
+
+ /* li가 안붙음.. 어떻게 해결 할 수 있을까여... ㅠ ㅁ
+ 테두리는 div를 하나 만들어서 하는게 좋을지? */
+#roomtype ul li {float:left;
+                  margin:0 15px;
+                }
+#roomtype ul li a {
+  font-size: 18px;
+  color:#747474;
+  /* 왜 색깔이 안먹히는걸까 ㅠㅠ */
+}
+#roomtype ul li figure
+{ position: relative;
+  width: 1270px; height: 700px;
+}
+#roomtype ul li figure img
+{ margin-right:10px;}
+#roomtype ul li figure img:nth-child(1)
+{ width: 820px; height: 680px;
+}
+#roomtype ul li figure img:nth-child(2)
+{width: 420px; height: 318px;
+  position: absolute; top:0;
+}
+#roomtype ul li figure img:nth-child(3)
+{width: 420px; height: 352px;
+  position: absolute; top:328px;
+}
+#roomtype ul li:nth-child(2) figure {display: none;}
+#roomtype ul li:nth-child(3) figure {display: none;}
+#roomtype ul li:nth-child(4) figure {display: none;}
+#roomtype ul li:nth-child(5) figure {display: none;}

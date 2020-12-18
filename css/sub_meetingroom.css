@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@import url(common.css);
+
+main{}
+
+/* 메인1 슬라이더 */
+body{margin: 0 auto;}
+  #main_sliderWrap { overflow: hidden; width: 100%; height: 945px; }
+  #sliderList { width: 300%; }
+  #sliderList .active { z-index: 1; }
+  #sliderList li { width: 33.3333%; height: 945px;
+                  float: left;
+                  background: no-repeat  center /cover;
+                  }
+  #sliderList li.slider1 { background-image: url(../images/main1.jpg); }
+  #sliderList li.slider2 { background-image: url(../images/main2.png); }
+  #sliderList li.slider3 { background-image: url(../images/main3.jpg); }
+
+
+#meetingmain_bg{ width: 100%; height: 773px;
+                  background: url(../images/wnm/meeting/meetingmain.jpg) center/ cover;
+                }
+#meetingmain_bg p { margin-left:350px;
+                    font-size:20px;
+                    font-family: 'Noto Serif KR', serif;}
+
+#meetingmain { width: 720px;  height: 773px;
+                background-color: rgba(135, 107, 28, 0.8);
+                }
+#meetingmain h2 {font-size:50px;
+                font-family: 'Noto Serif KR', serif;
+                color: #fff;
+                margin-left: 350px;
+                padding-top: 340px;
+              }
+
+.meeting_subtitle {width: 1200px; margin: 0 auto;
+                    padding-top: 200px;
+                    padding-bottom: 180px; }
+
+.meeting_subtitle h2 {font-size:45px;
+                      font-family: 'Noto Serif KR', serif;
+                      line-height: 40px;
+                      float:left;
+                      width: 330px; height: 65px;
+                      border-right: 3px solid #000;
+                      text-align: center;
+                  }
+.meeting_subtitle span {font-size: 30px;}
+
+.meeting_subtitle p {font-size: 16px;
+                    font-family: 'Noto sans KR', sans-serif;
+                    float: left; margin-left: 40px; }
+
+
+.menu_bar {clear: both; margin: 0 auto;
+            width: 1200px; height: 860px;  }
+.menu_bar .on1 { background-color: #9c7712;}
+.titlehidden {float: left; width: 290px; height: 29px;
+              background-color: #b4b4b4;
+              text-indent: -9999px;
+ }
+
+
+.menu_bar ul { position: relative;
+
+              }
+
+.menu_bar li { float: left;
+                  /* display: inline-block; */
+                  margin-right: 10px;
+              }
+
+
+/* 경원재 메뉴바에 옆공간 남는거 어떻게 처리하는 지? */
+.menu_bar ul li div {margin-top: 40px;
+  position: absolute; top:0; left:0;
+                      width: 1200px; height: 460px;
+               }
+.menu_bar ul li div img { width: 1200px; height: 460px;
+                          position: absolute;
+                          top:0; left:0;}
+/* 경원재 메뉴바에 옆공간 남는거 어떻게 처리하는 지?
+자세히보기는 어떻게 처리하는 지?*/
+.meeting_pic dl { width: 590px; height: 200px;
+                  background-color: #fff;
+                  position: absolute;
+                  bottom:0; left: 0;
+                  padding:  36px 20px 0 20px;
+                  box-sizing: border-box;
+                }
+.meeting_pic dl dt { font-size: 30px;
+                    font-family: 'Noto sans KR', sans-serif;
+                    font-weight:bold;
+                    line-height: 60px;
+                  }
+
+.meeting_pic dl dd {font-size: 15px;
+                    font-family: 'Noto sans KR', sans-serif;
+
+                    line-height: 30px;
+
+ }
+
+
+
+
+
+
+/* 웨딩 */
+#sub_wedding{clear: both;}
+
+#weddingmain_bg { width: 100%; height: 773px;
+                  background: url(../images/wnm/wedding/weddingmain.jpg) center/ cover;
+                }
+#weddingmain_bg p { margin-left:350px;
+                    font-size:20px;
+                    font-family: 'Noto Serif KR', serif;}
+
+#weddingmain { width: 720px;  height: 773px;
+                background-color: rgba(71, 98, 120, 0.8);
+                }
+#weddingmain h2 {font-size:50px;
+                font-family: 'Noto Serif KR', serif;
+                color: #fff;
+                margin-left: 350px;
+                padding-top: 340px;
+              }
+
+.wedding_subtitle {width: 1200px; margin: 0 auto;
+                    padding-top: 200px;
+                    padding-bottom: 180px; }
+
+.wedding_subtitle h2 {font-size:45px;
+                      font-family: 'Noto Serif KR', serif;
+                      line-height: 40px;
+                      float:left;
+                      width: 330px; height: 65px;
+                      border-right: 3px solid #000;
+                      text-align: center;
+                  }
+.wedding_subtitle span {font-size: 30px;}
+
+.wedding_subtitle p {font-size: 16px;
+                    font-family: 'Noto sans KR', sans-serif;
+                    float: left; margin-left: 40px; }
+
+
+.menu_bar {clear: both; margin: 0 auto;
+            width: 1200px; height: 860px;  }
+.menu_bar .on2 { background-color: #476278;}
+.titlehidden {float: left; width: 290px; height: 29px;
+              background-color: #b4b4b4;
+              text-indent: -9999px;
+ }
+
+
+.menu_bar ul { position: relative;
+
+              }
+
+.menu_bar li { float: left;
+                  /* display: inline-block; */
+                  margin-right: 10px;
+              }
+
+
+/* 경원재 메뉴바에 옆공간 남는거 어떻게 처리하는 지? */
+.menu_bar ul li div {margin-top: 40px;
+  position: absolute; top:0; left:0;
+                      width: 1200px; height: 460px;
+               }
+.menu_bar ul li div img { width: 1200px; height: 460px;
+                          position: absolute;
+                          top:0; left:0;}
+/* 경원재 메뉴바에 옆공간 남는거 어떻게 처리하는 지?
+자세히보기는 어떻게 처리하는 지?*/
+.wedding_pic dl { width: 590px; height: 200px;
+                  background-color: #fff;
+                  position: absolute;
+                  bottom:0; left: 0;
+                  padding:  36px 20px 0 20px;
+                  box-sizing: border-box;
+                }
+.wedding_pic dl dt { font-size: 30px;
+                    font-family: 'Noto sans KR', sans-serif;
+                    font-weight:bold;
+                    line-height: 60px;
+                  }
+
+.wedding_pic dl dd {font-size: 15px;
+                    font-family: 'Noto sans KR', sans-serif;
+
+                    line-height: 30px;
+
+ }
