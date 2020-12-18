@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>경원재 메인 페이지</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/common2.js"></script>
+    <style >
+    @media screen and (max-width:1700px) and (min-width: 0px) {#famailysite { top:20px;}
+      #gnb_member { top:20px;}
+      #gnb_menu { margin-top:40px;}
+    }
+    @media screen and (max-width:1300px) and (min-width: 0px)
+    {
+      #header h1 img { margin:0 0px 0 59px;}
+      #gnb_menu ul > li > ul { padding-left:270px; }
+      #gnb_menu ul>li>ul>li {float: left; margin-right:20px;}
+
+    }
+    /* @media screen and (max-width:1060px)
+     {#gnb_menu ul li { font-size: 16px;, margin-left:5px;}
+    } */
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1><a href="#"><img src="images/logo.png" alt="경원재로고"></a></h1>
+
+      <nav id="gnb_menu">
+        <h2 class="hidden">호텔이용메뉴</h2>
+              <ul>
+                <li><a href="#" title="예약" >reservation</a>
+                  <ul>
+                    <li><a href="#">room</a></li>
+                    <li><a href="#">dining</a></li>
+                    <li><a href="#">membership</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="sub_room.html" title="객실">Room</a>
+                  <ul>
+                    <li><a href="#">디럭스더블</a></li>
+                    <li><a href="#">디럭스 더블 	&amp; 싱글</a></li>
+                    <li><a href="#">디럭스 온돌</a></li>
+                    <li><a href="#">디럭스 스위트</a></li>
+                    <li><a href="#">로얄 스위트</a></li>
+                  </ul>
+                </li>
+                <li><a href="sub_dining.html" title="다이닝" >Dining</a>
+                  <ul>
+                    <li> <a href="#">한식당수라</a> </li>
+                  </ul>
+                </li>
+                <li><a href="sub_meetingroom.html" title="미팅 &amp; 웨딩"> Meeting &amp; Wedding</a>
+                  <ul>
+                    <li><a href="#">meeting</a>
+                      <ul>
+                        <li><a href="#">영빈관</a></li>
+                        <li><a href="#">아리랑</a></li>
+                        <li><a href="#">야외마당</a></li>
+                        <li><a href="#">이그제큐티브 미팅룸</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">wedding</a>
+                      <ul>
+                        <li><a href="#">전통혼례</a></li>
+                        <li><a href="#">일반웨딩</a></li>
+                        <li><a href="#">가족연</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" title="오퍼">offer</a>
+                  <ul>
+                    <li> <a href="#">패키지</a>
+                      <ul>
+                        <li><a href="#">이심전심</a></li>
+                        <li><a href="#">추(秋)옥</a></li>
+                        <li><a href="#">효(孝) & 휴(休)</a></li>
+                        <li><a href="#">아이 LOVE</a></li>
+                      </ul>
+                     </li>
+                     <li> <a href="#">이벤트	&amp;프로모션</a>
+                       <ul>
+                         <li><a href="#">양반들의 보양식 '경원재 효종갱'</a></li>
+                         <li><a href="#">면역력 강화에 좋은 '궁중 오골계 초교탕'</a></li>
+                       </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="sub_facilities.html" title="시설">Facilities</a>
+                  <ul>
+                    <li><a href="#">한복입어보기</a></li>
+                    <li><a href="#">전통놀이공간</a></li>
+                    <li><a href="#">한국관광명품전</a></li>
+                    <li><a href="#">비즈코너</a></li>
+                    <li><a href="#">산책로</a></li>
+                    <li><a href="#">바이오짐</a></li>
+                    <li><a href="#">송도 센트럴파크 조깅코스</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" title="호텔소개">About</a>
+                  <ul>
+                    <li><a href="#">호텔소개</a></li>
+                    <li><a href="#">오시는길</a></li>
+                  </ul>
+                </li>
+              </ul>
+      </nav>
+      <nav id=gnb_member>
+        <h2 class="hidden">회원관련메뉴</h2>
+        <ul>
+          <li class="goLogin"><a href="#">login</a></li>
+          <li class="goJoin"><a href="#">Join</a></li>
+          <li class="goLogin"><a href="#">My reservation</a></li>
+        </ul>
+      </nav>
+      <div id =famailysite>
+        <h2>family site</h2>
+        <ul>
+          <li> <a href="https://www.ambatel.com/ko/about/info.do">앰배서더 호텔 그룹</a> </li>
+          <li> <a href="http://www.gyeongwonjae.com/">경원재 앰배서더 인천</a> </li>
+          <li> <a href="https://www.ambatel.com/grandmercure/yongsan/ko/main.do">그랜드 머큐어 앰버서더 호텔 앤 레지던스 서울 용산</a> </li>
+          <li> <a href="https://www.ambatel.com/grandmercure/changwon/ko/main.do">그랜드 머큐어 앰버서더 창원</a> </li>
+          <li> <a href="https://www.ambatel.com/novotel/gangnam/ko/main.do">노보텔 스위트 앰버서더 서울 용산</a> </li>
+        </ul>
+      </div>
+    </header>
+    <hr>
+
+    <!--메인페이지-->
+    <main>
+      <div id="main_sliderWrap">
+        <ul id="sliderList">
+          <li class="slider1"></li>
+          <li class="slider2"></li>
+          <li class="slider3"></li>
+        </ul>
+        <div id="btnPos">
+          <span class="prev">prev</span>
+          <span class="next">next</span>
+        </div>
+      </div>
+      <section id="reser">
+        <div class="reser_size">
+          <hgroup>
+            <h2 class="hidden">reservation</h2>
+            <h3>special promotion</h3>
+          </hgroup>
+          <p>Grand opening <br>
+          <span>도심에서 느끼는 한옥의 멋</span> </p>
+          <form class="reser_sec">
+            <fieldset class="reser_room">
+              <legend class="hidden">룸타입</legend>
+              <select class="roomtype">
+                <option value="deluxe_double">디럭스 더블</option>
+                <option value="deluxe_doub_sing">디럭스 더블 	&amp; 싱글</option>
+                <option value="deluxe_ondol">디럭스 온돌</option>
+                <option value="deluxe_suite">디럭스 스위트</option>
+                <option value="royal_syite">로얄 스위트 </option>
+              </select>
+            </fieldset>
+
+            <fieldset class="reser_date">
+              <legend class="hidden">숙박날짜</legend>
+              <label for="checkin_date">check in / out </label>
+              <input type="date" id="checkin_date">
+              <input type="date" id="checkout_date">
+              <p><span>1</span>박</p>
+            </fieldset>
+            <fieldset class="reser_person">
+              <legend class="hidden" >인원수</legend>
+              <label for="room_Ea">Room</label>
+              <input type="number" id="room_Ea" required>
+              <label for="adult_Ea">Adult</label>
+              <input type="number" id="adult_Ea"  required>
+              <label for="kid_Ea">children</label>
+              <input type="number" id="kid_Ea" required>
+            </fieldset>
+            <fieldset class="confirm">
+              <input type="submit" value="search">
+            </fieldset>
+
+          </form>
+        </div>
+
+      </section>
+
+      <section id="roomtype">
+        <hgroup >
+          <h2 class="hidden">room</h2>
+          <h3>경원재객실둘러보기</h3>
+        </hgroup>
+        <!-- 이자리에 div 넣는게 좋을까...? -->
+        <ul>
+          <li class="on"><a href="#">디럭스 더블</a>
+            <figure class="on">
+               <img src="images/room/1deluxe_dbl/1.jpg" alt="디럭스룸 정면사진" >
+               <img src="images/room/1deluxe_dbl/2.jpg" alt="디럭스룸 욕실사진" >
+               <img src="images/room/1deluxe_dbl/3.jpg" alt="디럭스룸 측면사진">
+               <figcaption class="hidden">디럭스 더블룸의 상세사진</figcaption>
+           </figure>
+          </li>
+          <li><a href="#">디럭스 더블	&amp; 싱글</a>
+            <figure >
+               <img src="images/room/2deluxe_dblandsgl/1.jpg" alt="디럭스룸앤싱글룸 정면사진" >
+               <img src="images/room/2deluxe_dblandsgl/2.jpg" alt="디럭스룸앤싱글룸 측면사진" >
+               <img src="images/room/2deluxe_dblandsgl/3.jpg" alt="디럭스룸앤싱글룸 욕실사진">
+               <figcaption class="hidden">디럭스더블 앤 싱글룸의 상세사진</figcaption>
+           </figure>
+          </li>
+          <li><a href="#">디럭스 온돌</a>
+            <figure>
+               <img src="images/room/3deluxe_ondol/1.jpg" alt="디럭스온돌 전반적 구조사진" >
+               <img src="images/room/3deluxe_ondol/2.jpg" alt="디럭스온돌 침구사진" >
+               <img src="images/room/3deluxe_ondol/3.jpg" alt="디럭스온돌 방구조사진">
+               <figcaption class="hidden">디럭스온돌 룸의 상세사진</figcaption>
+           </figure>
+          </li>
+          <li><a href="#">디럭스 스위트</a>
+            <figure>
+               <img src="images/room/4deluxe_suite/1.jpg" alt="디럭스룸 정면사진" >
+               <img src="images/room/4deluxe_suite/2.jpg" alt="디럭스룸 욕실사진" >
+               <img src="images/room/4deluxe_suite/3.jpg" alt="디럭스룸 측면사진">
+               <figcaption class="hidden">디럭스 더블룸의 상세사진</figcaption>
+           </figure>
+          </li>
+          <li><a href="#">로얄 스위트</a>
+            <figure>
+               <img src="images/room/5royal_suite/1.jpg" alt="디럭스스위트 거실" >
+               <img src="images/room/5royal_suite/2.jpg" alt="디럭스스위트 더블침대" >
+               <img src="images/room/5royal_suite/3.jpg" alt="디럭스스위트 구조">
+               <figcaption class="hidden">디럭스 더블룸의 상세사진</figcaption>
+           </figure>
+          </li>
+        </ul>
+
+      </section>
+      <section id="restaurant">
+        <div class="diningbg2"></div>
+        <div id="rest_2">
+          <h2>Dining<span>다이닝레스토랑</span></h2>
+
+           <div class="dininginfo">
+             <h3>한식당 수라[水刺]</h3>
+             <p class="p1">한국 전통의 맛과 멋을 경험할 수 있는</p>
+             <p class="p2">Handpicked <br>Gourmet <br>Experience </p>
+             <p class="p3">court Cuisine / Korean food</p>
+             <a href="#" class="more">레스토랑 자세히보기</a>
+           </div>
+        </div>
+
+
+      </section>
+
+      <section id="special_offer">
+        <div class="offerbg2"></div>
+          <div id="offer_2">
+            <h2>Special<span>offer</span></h2>
+            <p class="offer_sub">스페셜 오퍼</p>
+            <div class="offerinfo">
+              <h3>효(孝) & 휴(休)</h3>
+              <p class="pp1">사랑하는 사람에게 선물하는 특별한 휴식</p>
+              <p class="p2">A special day <br>To give as a present <br>to someone you love </p>
+              <a href="#" class="more dining">스페셜오퍼 자세히보기</a>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div id="footerwrap">
+        <img src="images/logo2.png" alt="경원재앰배서더">
+        <div class="etc_menu">
+          <ul>
+            <li><a href="#">해외호텔예약</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">멤버쉽약관</a></li>
+            <li><a href="#">뉴스레터채용</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+          <div class="info">
+            <address>
+              인천경제자유구역청 인천광역시 연수구 테크노파크로 200 | TEL. 032-729-1101
+              <br>
+              사업자등록번호 379-83-00011 통신판매신고번호 인천연수구0193호 대표 이원재
+            </address>
+            <small>Copyright (c) 2020 Ambassador Hotel Group. All rights reserved.</small>
+          </div>
+        </div>
+        <ul class="sns">
+          <li class="trip"><a href="#"> <img src="images/logo_trip.png" alt="트립닷컴바로가기"></a></li>
+          <li class="insta"><a href="#"><img src="images/logo_insta.png" alt="인스타그램 바로가기"></a></li>
+          <li class="face"><a href="#"><img src="images/logo_facebook.png" alt="페이스북 바로가기"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
